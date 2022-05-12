@@ -1,16 +1,89 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,26 +91,333 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
+	width: 100%;
+	background-color: rgb(255, 0, 170);
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@font-face {
+	font-family: "myFont";
+	src: url("../fonts/myFont.woff") format("woff");
+}
+
+.header {
+
+	flex-flow: row wrap;
+	background-color: #f2e205;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.logoheader {
+	font-family: 'myFont';
+	float: left;
+	width: 50%;
+	font-size: 250%;
+	padding: 4%;
+	margin: 0 auto;
+
+}
+
+.footer {
+	color: #f2cb05;
+	display: flex;
+	align-items: center;
+	justify-items: stretch;
+	background-color: #080707;
+	padding: 2%;
+	gap: 1px;
+	font-family: 'myFont';
+	text-shadow: #FC0 1px 0 10px;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.mainblock {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #f2cb05;
+	padding-bottom: 4%;
+	width: 100%;
+}
+
+.portfolio,
+.logo {
+	padding: 4%;
+}
+
+iframe {
+	filter: grayscale(1);
+	width: 48%;
+	float: left;
+	border: 2px solid white;
+}
+
+iframe:hover {
+	filter: grayscale(0);
+	transition: all 2s ease-in;
+}
+
+.title {
+	font-family: 'myFont';
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding: 2%;
+	font-size: 270%;
+}
+
+.clients {
+	background-color: #f2e205;
+	color: rgb(255, 247, 247);
+	border-radius: 40%;
+	text-align: center;
+	font-weight: 700;
+	width: 40%;
+	border: 4px solid #fdfdfd;
+	justify-content: center;
+	overflow: scroll;
+	padding: 5%;
+	margin: 0 auto;
+}
+
+
+
+.menutop li:hover {
+	background-color: #f2cb05;
+	color: white;
+	font-size: 180%;
+	border-radius: 50%;
+
+}
+
+
+body {
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+}
+
+.retour:hover {
+	background-color: #f2cb05;
+}
+
+.title:hover {
+	text-shadow: rgb(255, 255, 255) 3px 0 14px;
+	color: rgb(0, 0, 0);
+}
+
+.retoursclientsblock {
+	flex-direction: row;
+}
+
+.mobilemenu {
+	width: 100;
+
+}
+
+svg {
+	width: 33%;
+	float: right;
+	padding: 10%;
+
+
+}
+
+.footer h1 {
+	padding: 10%;
+	margin: auto;
+	font-size: 150%;
+}
+
+.retour {
+	margin-bottom: 5%;
+}
+
+
+.btn-burger {
+	background-color: transparent;
+	border: none;
+	width: 40%;
+}
+
+.mobileblockmenu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+    top: -220px;
+    z-index: 9;
+	width: 100%;
+	height: 30%;
+	background-color: #000000;
+	transition: margin-top 0.5s ease-out;
+}
+
+.mobileblockmenu a {
+	margin-bottom: 30px;
+	font-family: 'myFont';
+	text-decoration: none;
+	color: #fff;
+	text-shadow: #FC0 10px 0 20px;
+}
+.desktopmenu {
+	display: none;
+}
+/* MOBILE 
+   MOBILE
+   MOBILE 
+   */
+
+@media screen and (min-width: 770px) {
+	.mainblock {
+		display: flex;
+		flex-flow: row wrap;
+		padding-bottom: 4%;
+		width: 100%;
+	}
+
+	.portfolio,
+	.logo {
+		padding: 4%;
+		width: 42%;
+	}
+
+	.footer {
+		color: #f2cb05;
+		display: flex;
+		align-items: center;
+		padding: 1%;
+		gap: 1px;
+		flex-direction: column;
+		flex-wrap:nowrap;
+	
+	}
+	.retoursclientsblock {
+		display: flex;
+}
+.retour {
+	flex-flow: column wrap;
+}
+.clients {
+	background-color: #f2e205;
+	color: rgb(255, 247, 247);
+	border-radius: 20%;
+	text-align: center;
+	font-weight: 700;
+	width: 20%;
+	border: 4px solid #fdfdfd;
+	justify-content: center;
+	overflow:hidden;
+	padding: 1%;
+	margin: 0 auto;
+}
+
+
+
+.logoheader {
+	font-family: 'myFont';
+	float: left;
+	width: 50%;
+	font-size: 350%;
+	padding: 3%;
+	vertical-align: baseline;
+	height: 100%;
+}
+.logoheader h1 {
+	align-self: center;
+}
+
+.footer h1 {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.mobileblockmenu {
+	display: none;
+}
+.desktopmenu {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	position: absolute;
+    top: -220px;
+    z-index: 9;
+	width: 100%;
+	height: 10%;
+	background-color: #000000;
+	transition: margin-top 0.4s ease-out;
+}
+.desktopmenu a {
+	margin-right: 7%;
+	font-family: 'myFont';
+	text-decoration: none;
+	color: #fff;
+	text-shadow: #FC0 20px 0 30px;
+	font-size: 150%;
+	
+}
+}
+@media screen and (min-width: 1150px) {
+
+	.desktopmenu { height: 15%;
+		padding-top: 0%;
+	}
+	.desktopmenu a {
+		font-size: 200%;
+		text-shadow: #FC0 20px 0 30px;
+	}
+	svg {
+		width: 20%;
+		float: right;
+		padding: 8%;
+	
+}
+
+	
+}
+

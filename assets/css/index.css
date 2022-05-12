@@ -411,6 +411,13 @@ svg {
 		font-size: 200%;
 		text-shadow: #FC0 20px 0 30px;
 	}
+
+	svg {
+		width: 20%;
+		float: right;
+		padding: 8%;
 	
+}
+
 }
 
