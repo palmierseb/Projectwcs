@@ -345,6 +345,20 @@ svg {
 .forfaitdetails h1 {
 	font-size: 150%;
    }
+
+   .titlesmain {
+	text-align: center;
+	font-size: 150%;
+	font-family: 'myFont';
+	width: 100%;
+	background-color: #f2cb05;
+	text-shadow: #FC0 10px 0 20px;
+	margin: -1px;
+	}
+
+	.desktopmenu a:hover, .mobileblockmenu a:hover {
+		color: silver;
+	}
 /* MOBILE 
    MOBILE
    MOBILE 

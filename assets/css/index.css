@@ -307,6 +307,10 @@ svg {
 .desktopmenu {
 	display: none;
 }
+
+.desktopmenu a:hover, .mobileblockmenu a:hover {
+	color: silver;
+}
 /* MOBILE 
    MOBILE
    MOBILE 

@@ -242,6 +242,7 @@ body {
 
 .retour:hover {
 	background-color: #f2cb05;
+	color: #000000;
 }
 
 .title:hover {
@@ -306,7 +307,45 @@ svg {
 }
 .desktopmenu {
 	display: none;
+
 }
+
+	.maincontent {
+	background-color:  #f2cb05;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	
+}
+
+.buttoncol2,.buttoncol1{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+}
+.buttoncol2 button,.buttoncol1 button {
+	background-color: #f2e205;
+	padding: 10%;
+	margin: 6%;
+	border: 2px solid black;
+	border-radius: 5%;
+	text-shadow: #FC0 10px 0 20px;
+	font-family: 'myFont';
+	font-size: 150%;
+}
+.buttoncol2 button:hover, .buttoncol1 button:hover {
+	background-color: #000000;
+	color: #fff;
+
+}
+
+.desktopmenu a:hover, .mobileblockmenu a:hover {
+	color: silver;
+}
+
 /* MOBILE 
    MOBILE
    MOBILE 
@@ -399,6 +438,12 @@ svg {
 	color: #fff;
 	text-shadow: #FC0 20px 0 30px;
 	font-size: 150%;
+	
+}
+.maincontent {
+	justify-content: center;
+	flex-direction: row;
+
 	
 }
 }

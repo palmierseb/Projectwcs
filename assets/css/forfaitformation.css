@@ -188,6 +188,7 @@ table {
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
+	text-align: center;
 
 }
 
@@ -344,7 +345,21 @@ svg {
 }
 .forfaitdetails h1 {
 	font-size: 150%;
-   }
+}
+
+.titlesmain {
+text-align: center;
+font-size: 150%;
+font-family: 'myFont';
+width: 100%;
+background-color: #f2cb05;
+text-shadow: #FC0 10px 0 20px;
+margin: -1px;
+}
+
+.desktopmenu a:hover, .mobileblockmenu a:hover {
+	color: silver;
+}
 /* MOBILE 
    MOBILE
    MOBILE 
@@ -437,13 +452,13 @@ svg {
 	color: #fff;
 	text-shadow: #FC0 20px 0 30px;
 	font-size: 150%;
-	
 }
-}
+
+
 @media screen and (min-width: 1150px) {
 
 	.desktopmenu { height: 15%;
-		padding-top: 0%;
+	padding-top: 0%;
 	}
 	.desktopmenu a {
 		font-size: 200%;
@@ -458,6 +473,7 @@ svg {
 }
 
 }
+}
 @media screen and (min-width: 850px) {
 .forfaits {
 display:flex;
@@ -469,3 +485,4 @@ flex-wrap: wrap;
 }
 
 }
+
