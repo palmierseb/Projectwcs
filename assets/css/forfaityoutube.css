@@ -149,13 +149,27 @@ table {
 	margin: 0 auto;
 
 }
+.header:hover {
+background-color:#ffffff;
+color: rgb(0, 0, 0);
+}
+
+
 
 .logoheader {
 	font-family: 'myFont';
 	float: left;
 	width: 50%;
-	font-size: 250%;
 	padding: 4%;
+	margin: 0 auto;
+
+}
+
+.logoheader h1 {
+	font-family: 'myFont';
+	float: left;
+	width: 50%;
+	font-size: 250%;
 	margin: 0 auto;
 
 }
@@ -278,9 +292,8 @@ svg {
 	width: 33%;
 	float: right;
 	padding: 10%;
-
-
 }
+
 
 .footer h1 {
 	padding: 10%;
@@ -335,6 +348,11 @@ svg {
     flex-direction: column;
 	justify-content: center;
 }
+.forfaitdetails:hover {
+	background-color: #000000;
+	color: #fff;
+	border: 2px solid white;
+}
 .forfaitdetails img {
 	padding: 5%;
 }
@@ -348,7 +366,7 @@ svg {
 
    .titlesmain {
 	text-align: center;
-	font-size: 150%;
+	font-size: 300%;
 	font-family: 'myFont';
 	width: 100%;
 	background-color: #f2cb05;

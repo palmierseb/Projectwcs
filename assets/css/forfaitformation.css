@@ -149,6 +149,21 @@ table {
 	margin: 0 auto;
 
 }
+.header:hover {
+
+	background-color:#f2cb05;
+	color: rgb(0, 0, 0);
+	
+	}
+.logoheader {
+	font-family: 'myFont';
+	float: left;
+	width: 50%;
+	font-size: 250%;
+	padding: 4%;
+	margin: 0 auto;
+
+}
 
 .logoheader {
 	font-family: 'myFont';
@@ -335,6 +350,10 @@ svg {
 	display: flex;
     flex-direction: column;
 	justify-content: center;
+}
+.forfaitdetails:hover {
+	background-color: #000000;
+	color: #fff;
 }
 .forfaitdetails img {
 	padding: 5%;
